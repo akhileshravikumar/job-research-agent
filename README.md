@@ -14,14 +14,23 @@ Given a company name, the agent autonomously searches the web and returns a stru
 ## Architecture
 
 User Input
+
 ↓
+
 LLM (gpt-4o-mini) — decides what to search
+
 ↓
+
 Tavily Web Search Tool — fetches real-time results
+
 ↓
+
 LLM — reasons over results, formats output
+
 ↓
+
 Structured Company Summary
+
 
 The agent runs a ReAct loop (Reason → Act → Observe) until it has enough information to answer.
 
